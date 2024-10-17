@@ -1,44 +1,44 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-#define MAX 100           // Maximum size of the stack
-int stack[MAX], top = -1; // Stack array and top pointer initialized to -1 (empty stack)
+// #define MAX 100           // Maximum size of the stack
+// int stack[MAX], top = -1; // Stack array and top pointer initialized to -1 (empty stack)
 
-// Push operation to add an element to the stack
-void push(int data)
-{
-    if (top == MAX - 1)
-    {                               // Check if the stack is full
-        printf("Stack Overflow\n"); // Stack overflow error
-    }
-    else
-    {
-        stack[++top] = data; // Increment top and add the element to the stack
-    }
-}
+// // Push operation to add an element to the stack
+// void push(int data)
+// {
+//     if (top == MAX - 1)
+//     {                               // Check if the stack is full
+//         printf("Stack Overflow\n"); // Stack overflow error
+//     }
+//     else
+//     {
+//         stack[++top] = data; // Increment top and add the element to the stack
+//     }
+// }
 
-// Pop operation to remove the top element from the stack
-int pop()
-{
-    if (top == -1)
-    {                                // Check if the stack is empty
-        printf("Stack Underflow\n"); // Stack underflow error
-        return -1;                   // Return -1 to indicate an empty stack
-    }
-    else
-    {
-        return stack[top--]; // Return the top element and decrement top
-    }
-}
+// // Pop operation to remove the top element from the stack
+// int pop()
+// {
+//     if (top == -1)
+//     {                                // Check if the stack is empty
+//         printf("Stack Underflow\n"); // Stack underflow error
+//         return -1;                   // Return -1 to indicate an empty stack
+//     }
+//     else
+//     {
+//         return stack[top--]; // Return the top element and decrement top
+//     }
+// }
 
-// Main function to test the stack operations
-int main()
-{
-    push(10);                      // Push 10 onto the stack
-    push(20);                      // Push 20 onto the stack
-    printf("Popped: %d\n", pop()); // Pop the top element (20) and print it
-    printf("Popped: %d\n", pop()); // Pop the top element (10) and print it
-    return 0;
-}
+// // Main function to test the stack operations
+// int main()
+// {
+//     push(10);                      // Push 10 onto the stack
+//     push(20);                      // Push 20 onto the stack
+//     printf("Popped: %d\n", pop()); // Pop the top element (20) and print it
+//     printf("Popped: %d\n", pop()); // Pop the top element (10) and print it
+//     return 0;
+// }
 
 queue
 #include <stdio.h>
